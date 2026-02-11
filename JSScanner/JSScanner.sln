@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSScanner", "JSScanner.vcxproj", "{34934E55-015E-4739-88FD-CDA9074A9C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		DebugMT|x64 = DebugMT|x64
+		Release|x64 = Release|x64
+		ReleaseMT|x64 = ReleaseMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.Debug|x64.ActiveCfg = Debug|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.Debug|x64.Build.0 = Debug|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.DebugMT|x64.ActiveCfg = DebugMT|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.DebugMT|x64.Build.0 = DebugMT|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.Release|x64.ActiveCfg = Release|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.Release|x64.Build.0 = Release|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.ReleaseMT|x64.ActiveCfg = ReleaseMT|x64
+		{34934E55-015E-4739-88FD-CDA9074A9C8D}.ReleaseMT|x64.Build.0 = ReleaseMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C347EC7-E8BF-3F38-B3A6-DE71AF212849}
+	EndGlobalSection
+EndGlobal

